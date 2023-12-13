@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        #container{
+            border: 3px solid red ;
+            border-radius: 10px;
+            width: 40%;
+            background-color: gray;
+            margin: auto;
+            height: 200px;
+            padding-left: 60px;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="display">00:00:00</h1>
+        <button onclick="startWatch()">Start</button>
+        <button onclick="watchStop()">Stop</button>
+        <button onclick="resetWatch()">Reset</button>
+    </div>
+   
+</body>
+</html>
+<script src="index.js">
+    // let [second, hour, minutes] = [0, 0, 0];
+    // let second=0;
+    // let minutes=0;
+    // let hour=0;
+
+    // let displaytime = document.getElementById('display');
+    // let timer = null;
+
+    // function stopWatch() {
+    //     second++;
+    //     if (second == 60) {
+    //         second = 0;
+    //         minutes++;
+    //         if (minutes == 60) {
+    //             minutes = 0;
+    //             hour++;
+    //         }
+    //     }
+    //   // yeh 0:0:0 ke form me tha 
+    // // 00:00:00 me lane ke liye line no 31,32,33 or siplay krne ke l;iye 34 me likha hu likha hu 
+    //     let h = hour < 10 ? "0" + hour : hour;
+    //     let m = minutes < 10 ? "0" + minutes : minutes;
+    //     let s = second < 10 ? "0" + second : second;
+    //     displaytime.innerHTML = h + ":" + m + ":" + s;
+    // }
+
+    // function startWatch() {
+    //     if (timer !== null) {
+    //         clearInterval(timer);
+    //     }
+    //     timer = setInterval(stopWatch, 1000);
+    // }
+
+
+    // function watchStop() {
+    //     clearInterval(timer);
+    // }
+
+    // function resetWatch() {
+    //     clearInterval(timer);
+    //     [second, hour, minutes] = [0, 0, 0];
+    //     displaytime.innerHTML = "00:00:00";
+    // }
+</script>
